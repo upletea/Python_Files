@@ -1,5 +1,26 @@
 action = ["insult", "ignore", "apologise", "praise"]
 
-action = input("What did this person do to you: insult, ignore, apologise, or praise")
+person_action = input("What did this person do to you: insult you, ignore you, apologise to you or praise you?" )
 
-if action =
+if person_action == "insult":
+    action = True
+else:
+   action = False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

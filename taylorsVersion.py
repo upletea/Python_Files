@@ -1,4 +1,4 @@
-swiftAlbums = ["Taylor Swift", "Fearless", "Speak Now", "Red", "1989", "Reputation", "Lover"]
+swiftAlbums = ["Taylor Swift", "Fearless", "Speak Now", "Red", "1989", "TTPD", "Reputation", "Lover"]
 
 print("Taylor Swift Albums:")
 for album in swiftAlbums:

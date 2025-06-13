@@ -64,3 +64,11 @@ this is text.
 - Began to read Loop section
 - attempted to make a breakout loop
 - Began pracRocket
+- Completed pracRocket
+- Started and Finished Challenge B
+# Lesson 7 (Week 3)
+- Added some comments to Challenge B
+- Submitted Challenge B
+- Made a GitHub account and learnt how to use it
+- Began Challenge C
+- Backed work up to GitHub
