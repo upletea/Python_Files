@@ -64,3 +64,5 @@ greet("Uptea")
 name = input("Enter your name: ")
 print("Hi", name)
 # Practical 2
+
+

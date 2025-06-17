@@ -22,7 +22,7 @@ else:
    waterplay = False
 
 # Print a message based on their waterplay preference
-print("new waterplay is", int(waterplay))  # True becomes 1, False becomes 0
+("new waterplay is", int(waterplay))  # True becomes 1, False becomes 0
 
 # Final personalised message
 print("You are", age, "years old and ready to play with Bluey in the backyard.")
@@ -36,7 +36,6 @@ else:
     print("You will skip waterplay but still enjoy yourself!")
 
 # EXERCISE 2
-
 games_list = ["Keepy Uppy", "Magic Asparagus", "Shadowlands", "Obstacle Course", "Muffin Cone"]
 print(games_list)
 
