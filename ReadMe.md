@@ -72,3 +72,8 @@ this is text.
 - Made a GitHub account and learnt how to use it
 - Began Challenge C
 - Backed work up to GitHub
+# Lesson 8 (Week 4)
+- Continued Challenge C with Curtis
+- Asked Mr Groom for assistance with Challenge C
+- USed GitHub to save new changes
+
