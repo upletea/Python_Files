@@ -16,7 +16,12 @@ def calculator(operation_input, num1, num2): #makes a function and defines it
         print("Error, operation is unsupported. No answer can be given.") #if neither adding nor subtracting is chosen, then an error message is shown
     
 result = calculator(operation_input, num1, num2,) #calls the calculator function with user input and stores the result
-print("Your answer is", result) #displays the final result
+
+if result is not None:
+    print("Your answer is", result) #displays the final result
+else:
+    print("Calculation could not be run. Try using 'addition or 'subtraction'.")
+
 
 
 
