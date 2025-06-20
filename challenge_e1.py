@@ -20,7 +20,7 @@ result = calculator(operation_input, num1, num2,) #calls the calculator function
 if result is not None:
     print("Your answer is", result) #displays the final result
 else:
-    print("Calculation could not be run. Try using 'addition or 'subtraction'.")
+    print("Calculation could not be run. Try using 'addition or 'subtraction'.") #tells user that the calculation will not work and to use one of the appropriate operatins instead
 
 
 
