@@ -76,4 +76,14 @@ this is text.
 - Continued Challenge C with Curtis
 - Asked Mr Groom for assistance with Challenge C
 - USed GitHub to save new changes
+# Lesson 9 (Week 4)
+- submitted challenge c
+- added comments to challenge d (worked on it and completed it with keira the day before)
+- submitted challenge d
+- watched a video on functions
+- began challenge e
+- assumed i finiished it, then realised i needed to use functions in my code
+- finished the first half of my challenge e and commented on that half
+- began the second half of challenge e
+- commited files to github master repository
 
