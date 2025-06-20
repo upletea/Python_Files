@@ -9,9 +9,9 @@ operation_input = input("What operation would you like to use: adding or subtrac
 
 def calculator(operation_input, num1, num2): #makes a function and defines it
     if operation_input == "adding": # if the input is adding...
-       return num1 + num2 #the number is returned as a combination of both numbers
+       return num1 + num2 #the solution of adding the two numbers is returned to the user
     elif operation_input == "subtracting": #if the input is subtraction...
-       return num1 - num2 #its returned as the product of that
+       return num1 - num2 #the answer of the subtracted numbers is returned to the user
     else:
         print("Error, operation is unsupported. No answer can be given.") #if neither adding nor subtracting is chosen, then an error message is shown
     
@@ -20,7 +20,7 @@ result = calculator(operation_input, num1, num2,) #calls the calculator function
 if result is not None:
     print("Your answer is", result) #displays the final result
 else:
-    print("Calculation could not be run. Try using 'addition or 'subtraction'.") #tells user that the calculation will not work and to use one of the appropriate operatins instead
+    print("Calculation could not be run. Try using 'addition or 'subtraction'.") #tells user that the calculation will not work and to use one of the appropriate operations instead
 
 
 
