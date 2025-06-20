@@ -4,7 +4,7 @@ num2 = int(input("Enter your second number:"))  #user inputs second number as an
 if num1 > int(num2):
     print(num1, "is larger than", num2)
 elif num1 < int (num2):
-    print(num1, "is smalller than", num2)
+    print(num1, "is smaller than", num2)
 elif num1 == int(num2):
     print(num1, "is equal to" , num2)
 
