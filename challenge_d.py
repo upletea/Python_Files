@@ -1,6 +1,7 @@
 # List the weapons and special attacks
 weapons = ["Firing Squad", "Rifle", "Grenade"]
 special_attacks = ["Incinerate", "Poison", "Paralyse"]
+enemies = ["Casual Curtis", "Scary Sienna", "Agressive Aapti", "Killer Keira" ]
 
 # Set the player's health to 100 and the enemy's health to 90
 player_health = 100 
@@ -9,9 +10,10 @@ enemy_health = 90
 # Display a starting message
 print("Welcome, hero! You face an enemy in battle!")
 
-# Show the player their weapon and attack options
+# Show the player their weapon, enemy and attack options
 print("Your Weapons:", weapons)
 print("Your Special Attacks:", special_attacks)
+print("Your enemy options:", enemies)
 
 # Show the player the health of them and their oponent
 print("Your health:",{player_health})
@@ -22,6 +24,7 @@ while player_health > 0 and enemy_health > 0:
     # This will ask them what their weapon of choice and attack style is
     weapon = input("Choose your weapon: ")
     attack = input("Choose your special attack: ")
+    enemy = input("CHoose what enemy you would like to face: ")
     # If they choose the firing squad...
     if weapon == "Firing Squad":
         # Set the damage for the particular weapon
@@ -36,9 +39,20 @@ while player_health > 0 and enemy_health > 0:
         # Start the enemy's turn
         print("Enemy's turn")
         # Use the damage dealt from the enemy to work out the player's new health
-        player_health = player_health - 20
+        # decide which enemy gives a particular amount of damage
+        if enemy == "Casual Curtis":
+            enemy_damage = 15
+        elif enemy == "Scary Sienna":
+            enemy_damage = 20
+        elif enemy == "Aggressive Aapti":
+            enemy_damage = 25
+        elif enemy == "Killer Keira":
+            enemy_damage = 30
+        else:
+            print("Invalid choice!")
+        player_health = player_health - enemy_damage
         # Display to the player their new stats
-        print("Enemy attacks you for 20 damage!")
+        print("Enemy attacks you for:", enemy_damage, "damage!")
         print("Your health:",{player_health})
 
     # If they choose the rifle...
@@ -55,10 +69,22 @@ while player_health > 0 and enemy_health > 0:
         # Start the enemy's turn
         print("Enemy's turn")
         # Use the damage dealt from the enemy to work out the player's new health
-        player_health = player_health - 20
+        # decide which enemy gives a particular amount of damage
+        if enemy == "Casual Curtis":
+            enemy_damage = 15
+        elif enemy == "Scary Sienna":
+            enemy_damage = 20
+        elif enemy == "Aggressive Aapti":
+            enemy_damage = 25
+        elif enemy == "Killer Keira":
+            enemy_damage = 30
+        else:
+            print("Invalid choice!")
+        player_health = player_health - enemy_damage
         # Display to the player their new stats
-        print("Enemy attacks you for 20 damage!")
-        print("Your health:",{player_health}) 
+        print("Enemy attacks you for:", enemy_damage, "damage!")
+        print("Your health:",{player_health})
+
 
     # If they choose the grenade...
     elif weapon == "Grenade":
@@ -74,10 +100,22 @@ while player_health > 0 and enemy_health > 0:
         # Start the enemy's turn
         print("Enemy's turn")
         # Use the damage dealt from the enemy to work out the player's new health
-        player_health = player_health - 20
+        # decide which enemy gives a particular amount of damage
+        if enemy == "Casual Curtis":
+            enemy_damage = 15
+        elif enemy == "Scary Sienna":
+            enemy_damage = 20
+        elif enemy == "Aggressive Aapti":
+            enemy_damage = 25
+        elif enemy == "Killer Keira":
+            enemy_damage = 30
+        else:
+            print("Invalid choice!")
+        player_health = player_health - enemy_damage
         # Display to the player their new stats
-        print("Enemy attacks you for 20 damage!")
-        print("Your health:",{player_health})  
+        print("Enemy attacks you for:", enemy_damage, "damage!")
+        print("Your health:",{player_health})
+
 
     else:
         # If the player does not put in one of the set options, it will get them to go again
