@@ -12,9 +12,9 @@ print("Welcome, hero! You face an enemy in battle!")
 
 # Show the player their weapon, enemy and attack options
 # Also uses the len() function to show the length of each list
-print(f"You have {len(weapons)} weapons:", weapons)
-print(f"You have {len(special_attacks)} special Attacks:", special_attacks)
-print(f"You have {len(enemies)} enemy options:", enemies)
+print(f"You have {len(weapons)} Weapons:", weapons)
+print(f"You have {len(special_attacks)} Special Attacks:", special_attacks)
+print(f"You have {len(enemies)} Enemy Options:", enemies)
 
 # Gives the user options to change their list of weapons
 print("\n Weapon Management ")
@@ -22,12 +22,12 @@ print("1. Add a new weapon")
 print("2. Remove a weapon")
 print("3. Continue to battle")
 
-# . split.lower makes sure user can input the response with a lowercase letter
-weapon_choice = input("Choose an option (1, 2, or 3): ").split().lower()
+# .split().lower() makes sure user can input the response with a lowercase letter
+weapon_choice = input("Choose an option (1, 2, or 3): ") 
 # If they chose to add a weapon...
 if weapon_choice == "1":
         # It asks them what weapon they want to add
-        new_weapon = input("Enter the name of the weapon to add: ").split().lower()
+        new_weapon = input("Enter the name of the weapon to add: ")
         # Changes the list and adds the new weapon
         weapons.append(new_weapon)
         # Tells the user the new weapon was added
@@ -37,7 +37,7 @@ elif weapon_choice == "2":
         # It shows them their current weapons
         print("Current Weapons:", weapons)
         # Asks them what weapon they want to remove
-        weapon_to_remove = input("Enter the name of the weapon to remove: ").split().lower()
+        weapon_to_remove = input("Enter the name of the weapon to remove: ")
         if weapon_to_remove in weapons:
             weapons.remove(weapon_to_remove)
             print(f"{weapon_to_remove} has been removed.")
@@ -56,9 +56,9 @@ print(f"Enemy health: {enemy_health}")
 # This loop will run while both the player's health and the enemy's health is more than 0
 while player_health > 0 and enemy_health > 0:
     # This will ask them what their weapon of choice and attack style is
-    weapon = input("Choose your weapon: ") .split().lower()
-    attack = input("Choose your special attack: ") .split().lower()
-    enemy = input("CHoose what enemy you would like to face: ") .split().lower()
+    weapon = input("Choose your weapon: ") 
+    attack = input("Choose your special attack: ")
+    enemy = input("CHoose what enemy you would like to face: ") 
     # If they choose the firing squad...
     if weapon == "Firing Squad":
         # Set the damage for the particular weapon
