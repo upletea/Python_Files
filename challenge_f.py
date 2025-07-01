@@ -9,11 +9,11 @@ student_profile["grade"] = input("Enter the student grade (A, B, C, D, E or F): 
 student_profile["age"] = int(input("Enter the student's age: "))
 student_profile["enrolled"] = input("Is the student enrolled? (Yes or No?) : ")
 
+#if/else statement that converts students enrollment status into a boolean
 if student_profile["enrolled"] == "Yes":
     student_profile["enrolled"] = True
 else:
     student_profile["enrolled"] = False
-
 
 # Displays the profile
 print("~Student Profile~")
@@ -21,8 +21,8 @@ print(f"Name: {student_profile['name']}")
 print(f"Year Level: {student_profile['year level']}")
 print(f"Grade: {student_profile['grade']}")
 print(f"Age: {student_profile['age']}")
-print(f"Enrolled: {student_profile['enrolled']}")
 
+#uses the boolean previously stored to create an output statement of enrollment status
 if student_profile["enrolled"] == True:
     print("Student is currently enrolled.")
 else:
