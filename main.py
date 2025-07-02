@@ -78,3 +78,20 @@ def sum(num1, num2):
 
 total = sum(2,3)
 print(total)
+
+if game_map == (0,0):
+    print(location_descriptions[0])
+elif game_map == (0,1):
+    print(location_descriptions[1])
+elif game_map == (1,0):
+    print(location_descriptions[2])
+elif game_map == (1,1):
+    print(location_descriptions[3])
+elif game_map == (1,2):
+    print(location_descriptions[4])
+elif game_map == (2,0):
+    print(location_descriptions[5])
+elif game_map == (2,1):
+    print(location_descriptions[6])
+elif game_map == (2,2):
+    print(location_descriptions[7])
