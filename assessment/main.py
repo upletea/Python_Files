@@ -24,9 +24,6 @@ print(PLAYER_LOC)
 def main():
   """Main Game Loop"""
 
-print(Fore.YELLOW + "You are in the ARMOURY.")
-print(Fore.CYAN + "You see: blaster")
-print(Fore.RED + "You can't go that way.")
 print("=" * 50)
 print("              THE ELEMENTAL TRIALS")
 print("=" * 50)
