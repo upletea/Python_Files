@@ -1,5 +1,14 @@
 import os
+import random
 import colorama
+
+
+from colorama import init, Fore, Style, Back
+init(autoreset=True)  # Resets colour after each print
+
+def cls():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -13,5 +22,5 @@ def restart_level():
    score = 0
    exit_game = False
 
-from colorama import init, Fore, Style
-init(autoreset=True)  # Resets colour after each print
+
+
