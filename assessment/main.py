@@ -23,16 +23,18 @@ clear_screen()
 #loc 0
 def room_0():
     print(Style.BRIGHT + Fore.LIGHTBLUE_EX + rooms[0])
+    print()
     print(rooms_text[0])
-    
+    print()
     input("Press Enter to continue...")
     clear_screen()
     
-    print("Looking at the array of doors eerily illuminated in front of you, you realise this is your fate."
-          "Taking a deep breath, you slowly creep towards the closest room, carefully inspecting the dark oak door "
-          "and admiring the intricate carving of a wave centred on it. Softly sighing in defeat, you reach out and twist the dull handle. "
-          "A gust of wind sweeps you up, seemingly appearing from nowhere. Your vision blurs and you get swept into oblivion.")
-    
+    print("Looking at the array of doors eerily illuminated in front of you, you realise this is your fate.")
+    print()
+    print("Taking a deep breath, you slowly creep towards the closest room, carefully inspecting the dark oak door and admiring the intricate carving of a wave centred on it. Softly sighing in defeat, you reach out and twist the dull handle.")
+    print()
+    print ("A gust of wind sweeps you up, seemingly appearing from nowhere. Your vision blurs and you get swept into oblivion.")
+    print()
     input("Press Enter to continue...")
     clear_screen()
 
@@ -42,12 +44,14 @@ clear_screen()
 
 def room_1():
     print(Style.BRIGHT + Fore.LIGHTBLUE_EX + rooms[1])
+    print()
     print(rooms_text[1])
+    print()
     input("Press Enter to continue...")
     clear_screen()
     player_location = rooms[1]
 
-    room_0()
+    
     clear_screen()
 
 room_1() 
@@ -85,12 +89,13 @@ while True:
         clear_screen()
         
         print("Overwhelmed with gratitude, the woman reveals herself as a significant member of the Council of the Elements "
-              "and presents you with an incredibly breathtaking stone, almost directly replicating the fierce nature of the sea. "
-              "Your eyelids begin to feel heavy and you yawn involuntarily. Your eyes droop closed and....")
-        
-        clear_screen()
+              "and presents you with an incredibly breathtaking stone, almost directly replicating the fierce nature of the sea. ")
         inventory.append("Sea Stone")
-        print("Item added to your inventory!", inventory)
+        print(Style.BRIGHT + Fore.GREEN + "Item added to your inventory!", inventory)
+        print()
+        input("Press Enter to continue...")
+        clear_screen()
+        ("Your eyelids begin to feel heavy and you yawn involuntarily. Your eyes droop closed and....")
         clear_screen()
         break
 
@@ -127,7 +132,7 @@ def room_2():
     clear_screen()
     player_location = rooms[2]
 
-    room_1()
+  
     clear_screen()
 
 room_2() 
@@ -140,7 +145,7 @@ def room_2():
         return False
 
 # Generate a 5x4 map with one random lightning square per row
-def generate_map(): #used copilot to make the lightning_strike
+def generate_map(): ###used copilot to make the lightning_strike
     lightning_strike = []
     minigame_map = []
     for i in range(5):
@@ -228,11 +233,19 @@ room_2()
 player_location = rooms[3]
 clear_screen()
 #loc 3
-PLAYER_LOC = rooms(3)
-print(PLAYER_LOC)
-print(rooms_text[3])
-rooms[3]
+def room_3():
+    print(Style.BRIGHT + Fore.LIGHTBLUE_EX + rooms[3]) 
+    print()
+    print(rooms_text[3])
+    print()
+    input("Press Enter to continue...")
+    clear_screen()
+    player_location = rooms[3]
 
+ 
+    clear_screen()
+
+room_3() 
 #part un
 print("No legs have I to dance, No lungs have I to breathe, No life have I to live or die And yet I do all three. What am I?")
 
@@ -398,27 +411,6 @@ def battle():
         print("You have been defeated. Game over.")
         exit()
         
-        print("Enemy's turn")
-       
-        player_health = player_health - enemy_damage
-       
-        print(f"Enemy attacks you for: {enemy_damage} damage!")
-        print(f"Your health: {player_health}")
-
-
-
-       
-        enemy_health = enemy_health - damage
-
-        print(f"You attack with {weapon} and deal {damage} damage.")
-        
-        print(f"Enemy health: {enemy_health}")
 
       
 main()
-
-
-
-
-
- 
