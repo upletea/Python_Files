@@ -11,7 +11,7 @@ def main():
   """Main Game Loop"""
 
 print("=" * 50)
-print(Style.BRIGHT + Fore.MAGENTA + "              THE ELEMENTAL TRIALS")
+print(Back.BLACK + Style.BRIGHT + Fore.MAGENTA + "              THE ELEMENTAL TRIALS              ")
 print("=" * 50)
 current_room = 0
 player_location = rooms[0]
